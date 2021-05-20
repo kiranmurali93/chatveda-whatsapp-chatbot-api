@@ -1,7 +1,7 @@
 var express = require("express");
 var app = express();
 const axios = require('axios')
-var PORT = process.env.port || 8000;
+var PORT = process.env.PORT || 8000;
 
 app.use(express.urlencoded({extended: true}));
 app.use(express.json()) 
