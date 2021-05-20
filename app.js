@@ -1,6 +1,7 @@
 var express = require("express");
 var app = express();
 const axios = require('axios')
+var PORT = process.env.port || 8000;
 
 app.use(express.urlencoded({extended: true}));
 app.use(express.json()) 
@@ -47,6 +48,6 @@ app.use(oxygen)
 
 
 //port
-var server = app.listen(8000, function () {
+var server = app.listen(PORT, function () {
     console.log("Server Running on port.", server.address().port);
 });
